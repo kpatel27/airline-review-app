@@ -19,7 +19,7 @@ class AirlineContainer extends Component {
     axios
       .get(`/api/v1/airlines/${this.props.match.params.slug}`)
       .then((response) => {
-        let airline = response.data.data;
+        let airline = response.data;
         this.setState({
           airline: airline,
           loaded: true,
@@ -31,13 +31,27 @@ class AirlineContainer extends Component {
   }
 
   render() {
+    let reviews;
+    if (this.state.airline.included) {
+      reviews = this.state.airline.included.map((review, idx) => {
+        return (
+          <Review
+            key={idx}
+            title={review.attributes.title}
+            description={review.attributes.description}
+            score={review.attributes.score}
+          />
+        );
+      });
+    }
+
     return (
       <div>
         <div className="column">
           {this.state.loaded && (
-            <Header attributes={this.state.airline.attributes} />
+            <Header attributes={this.state.airline.data.attributes} />
           )}
-          <Review />
+          {reviews}
         </div>
         <div className="column">[new review form will go here]</div>
       </div>
