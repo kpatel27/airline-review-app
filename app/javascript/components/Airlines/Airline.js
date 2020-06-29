@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../../assets/stylesheets/Airline.css";
 
 const Airline = (props) => {
   const { name, image_url, slug } = props.attributes;
@@ -10,7 +11,7 @@ const Airline = (props) => {
       </div>
       <div className="airline-name">{name}</div>
       <div className="review-link">
-        <Link to={`/${slug}`}>View {name} Reviews</Link>
+        <Link to={`/${slug}`}>View Reviews</Link>
       </div>
     </div>
   );

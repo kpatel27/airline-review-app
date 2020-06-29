@@ -1,0 +1,15 @@
+.review {
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.title {
+  padding: 20px 0px;
+  font-weight: bold;
+}
+
+.description {
+  padding: 0 0 20px 0;
+}

@@ -1,0 +1,29 @@
+.card {
+  border: 1px solid #efefef;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  height: 50px;
+}
+
+.airline-name {
+  padding: 20px;
+}
+
+.review-link {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.review-link a {
+  color: rgb(21, 151, 75);
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+  min-height: 40px;
+  margin: 7px;
+  font-weight: 600;
+  padding: 0 15px;
+}

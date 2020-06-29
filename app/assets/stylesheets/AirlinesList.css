@@ -1,0 +1,25 @@
+.home {
+  text-align: center;
+}
+
+.header {
+  padding: 100px 100px 10px 100px;
+}
+
+.header h1 {
+  font-size: 45px;
+}
+
+.subheader {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}

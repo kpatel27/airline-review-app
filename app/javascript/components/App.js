@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import AirlinesList from "./Airlines/AirlinesList";
-import Airline from "./Airline/Airline";
+import AirlineContainer from "./Airline/AirlineContainer";
 
 const App = () => {
   return (
     <Switch>
       <Route path="/" exact component={AirlinesList} />
-      <Route path="/:slug" component={Airline} />
+      <Route path="/:slug" component={AirlineContainer} />
     </Switch>
   );
 };

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Airline from "./Airline";
+import "../../../assets/stylesheets/AirlinesList.css";
 
 class AirlinesList extends Component {
   constructor(props) {
@@ -29,9 +30,7 @@ class AirlinesList extends Component {
           <h1>Airline Reviews</h1>
           <p className="subheader">Write your review of airlines</p>
         </div>
-        <div className="grid">
-          <ul>{grid}</ul>
-        </div>
+        <div className="grid">{grid}</div>
       </div>
     );
   }
